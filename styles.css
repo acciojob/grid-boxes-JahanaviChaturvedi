@@ -1,1 +1,30 @@
 /*  your css code here. If applicable */
+#grid{
+	display:grid;
+	grid-template-columns: repeat(3, 1fr); 
+	grid-template-rows:repeat(3,1fr)
+}
+div{
+	background-color:green;
+	border: 2px solid white;
+	color:white;
+}
+
+#item1{
+	grid-row:span 2;
+	grid-column:span 3;
+}
+
+#item2{
+	grid-row:span 4;
+}
+
+#item3{
+	grid-row:span 1;
+	grid-column:span 1;
+}
+
+#item4{
+	grid-row:span ;
+	grid-column:span 1;
+}
